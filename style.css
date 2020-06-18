@@ -163,3 +163,182 @@ canvas {
   background-position: 50% 50%;
   z-index: 1;
 }
+
+/*--------- KNOW MORE -----------*/
+.know-more {
+  background: #f9f9f9;
+  position: relative;
+  padding: 120px 0 100px;
+}
+
+/* @media only screen and (max-width: 880px) {
+  padding: 40px 0;
+} */
+
+.know-more-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.know-more-picture {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+}
+
+.know-more-picture:hover .rectangle-picture {
+  transform: rotate(10deg);
+}
+/* @media only screen and (max-width: 880px) {
+  display: none;
+} */
+
+.know-more-picture img {
+  width: 350px;
+  vertical-align: middle;
+  position: relative;
+  z-index: 4;
+  transition: 1s ease-in-out;
+}
+
+.rectangle-picture {
+  width: 350px;
+  height: 440px;
+  border: 2px solid #ee82ee;
+  position: absolute;
+  top: -20px;
+  left: 75px;
+  z-index: 2;
+  transition: 1s ease-in-out;
+}
+
+/* @media only screen and (max-width: 1060px) {
+          display: none;
+        } */
+
+.know-more-text {
+  display: inline-block;
+  width: 40%;
+  padding: 20px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* @media only screen and (max-width: 880px) {
+        width: 100%;
+        padding: 0;
+      } */
+
+.know-more-title {
+  font-size: 30px;
+  line-height: 39px;
+}
+
+.know-more-text p {
+  color: #333;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 7px 0;
+  padding-bottom: 15px;
+}
+
+.know-more-text a {
+  color: #ee82ee;
+  text-decoration: none;
+}
+
+.know-more-text span ~ h2 {
+  padding: 30px 0 0 0;
+}
+
+.know-more-text .skill {
+  display: inline-block;
+  padding: 4px 10px;
+  margin-right: 4px;
+  margin-top: 6px;
+  border: 1px solid #000;
+  border-radius: 15px;
+}
+
+.work {
+  background: #f9f9f9;
+  position: relative;
+  padding: 40px 0 100px;
+}
+
+.work-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.work h2 {
+  font-size: 30px;
+  line-height: 39px;
+  padding-bottom: 10px;
+}
+
+.work ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.work li {
+  position: relative;
+  width: 30%;
+  height: 200px;
+  transform-style: preserve-3d;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+
+.work a {
+  display: inline-block;
+  color: #000;
+  width: 100%;
+  height: 100%;
+}
+
+.work img {
+  width: 100%;
+}
+
+.work h3 {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.work .work-info {
+  background-color: #fff;
+  padding: 10px;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: -20px;
+  transform-origin: top;
+  transform: translateZ(20px) scaleY(0);
+  transition: 0.5s;
+  transform-style: preserve-3d;
+}
+
+.work li:hover {
+  box-shadow: 0 50px 80px rgba(0, 0, 0, 0.2);
+}
+
+.work li:hover .work-info {
+  transform: translateZ(20px) scaleY(1);
+}
+
+.leboncoin {
+  background-image: url(images/thumb-leboncoin.jpg);
+}
+
+.mountains {
+  background-image: url(images/thumb-mountains.jpg);
+}
+
+.mac {
+  background-image: url(images/thumb-mac.jpg);
+}

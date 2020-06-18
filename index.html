@@ -18,7 +18,7 @@
             Jessica Thielemans<br />
             <span class="intro-job">développeuse front-end</span>
           </h1>
-          <img src="images/jt-neon-jap.svg" />
+          <img src="images/jt-neon-jap.svg" data-tilt data-tilt-reset="false" />
         </div>
         <div class="intro-scroll">
           <p>Scroll / défile vers le bas</p>
@@ -33,9 +33,82 @@
         </div>
         <div id="particles-js"></div>
       </section>
+      <section class="know-more">
+        <div class="know-more-container">
+          <div class="know-more-picture">
+            <img src="images/jessica.jpg" alt="jessica's picture" />
+            <div class="rectangle-picture"></div>
+          </div>
+          <div class="know-more-text">
+            <h2 class="know-more-title">More ?</h2>
+            <p>
+              Jessica Thielemans fraichement diplômée du bachelor web de
+              <a href="https://www.hetic.net/">HETIC</a> avec 2 ans d'alternance
+              en agence web. Je prendrai bientôt des prestations en freelance !
+            </p>
+            <span class="skill">#HTML5</span><span class="skill">#CSS3</span
+            ><span class="skill">#SASS</span><span class="skill">#BEM</span
+            ><span class="skill">#JavaScript</span
+            ><span class="skill">#Vue.JS</span
+            ><span class="skill">#Nuxt.JS</span><span class="skill">#ES6</span>
+            <h2 class="know-more-title">Now ?</h2>
+            <p>
+              Tu peux suivre de près ce que je fais grâce à mon compte
+              <a href="https://www.instagram.com/lumycodes/">Instagram</a> et
+              <a href="https://github.com/JessicaThi">GitHub</a>. Après avoir
+              fini le challenge JavaScript30 fait par WesBos, je m'attaque au
+              livre "You don't know JS yet" de Kyle Simpson :)
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="work">
+        <div class="work-container">
+          <h2>Quelques projets</h2>
+          <ul>
+            <li data-tilt data-tilt-reverse="true" class="leboncoin">
+              <a href="#">
+                <!-- <img src="images/thumb-leboncoin.jpg" alt="" /> -->
+                <div class="work-info">
+                  <h3>Refonte Leboncoin</h3>
+                  <p class="skills-text">Photoshop</p>
+                </div>
+              </a>
+            </li>
+            <li data-tilt data-tilt-reverse="true" class="mountains">
+              <a href="#">
+                <!-- <img src="images/thumb-mountains.jpg" alt="" /> -->
+                <div class="work-info">
+                  <h3>Mountains</h3>
+                  <p class="skills-text">HTML5, Sass</p>
+                </div>
+              </a>
+            </li>
+            <li data-tilt data-tilt-reverse="true" class="mac">
+              <a href="https://macxpony-lipsticks.netlify.app">
+                <!-- <img src="images/thumb-mac.jpg" alt="" /> -->
+                <div class="work-info">
+                  <h3>Mac Cosmetics</h3>
+                  <p class="skills-text">Vue.js</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="particles-custom.js"></script>
+    <script src="vanilla-tilt.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal().reveal(".intro-scroll p", { delay: 500 });
+      ScrollReveal().reveal(".know-more-picture img");
+      ScrollReveal().reveal(".rectangle-picture");
+      ScrollReveal().reveal(".know-more-text", { delay: 100 });
+      ScrollReveal().reveal(".work-container h2");
+      ScrollReveal().reveal(".work-container ul", { delay: 200 });
+    </script>
   </body>
 </html>
