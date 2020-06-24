@@ -4,6 +4,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font: normal 75% Arial, Helvetica, sans-serif;
 }
@@ -36,7 +41,7 @@ h1 {
   overflow: hidden;
   position: relative;
   z-index: 5;
-  animation: animate 3s linear;
+  animation: animate 2s linear;
 }
 
 .intro img {
@@ -66,9 +71,11 @@ h1 {
   z-index: 4;
 }
 
-.intro-scroll p {
-  color: white;
+.intro-scroll a {
+  display: block;
   text-align: center;
+  text-decoration: none;
+  color: white;
   font-size: 14px;
   font-style: italic;
   margin-bottom: 5px;
@@ -168,31 +175,32 @@ canvas {
 .know-more {
   background: #f9f9f9;
   position: relative;
-  padding: 120px 0 100px;
+  padding: 120px 0 50px;
+  display: flex;
+  justify-content: center;
 }
-
-/* @media only screen and (max-width: 880px) {
-  padding: 40px 0;
-} */
 
 .know-more-container {
   width: 80%;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .know-more-picture {
-  position: relative;
-  display: inline-block;
-  text-align: center;
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .know-more-picture:hover .rectangle-picture {
   transform: rotate(10deg);
 }
-/* @media only screen and (max-width: 880px) {
-  display: none;
-} */
+
+.rectangle-picture-wrapper {
+  display: inline-block;
+  position: relative;
+}
 
 .know-more-picture img {
   width: 350px;
@@ -207,28 +215,19 @@ canvas {
   height: 440px;
   border: 2px solid #ee82ee;
   position: absolute;
-  top: -20px;
-  left: 75px;
+  top: -5%;
+  left: -10%;
   z-index: 2;
   transition: 1s ease-in-out;
 }
 
-/* @media only screen and (max-width: 1060px) {
-          display: none;
-        } */
-
 .know-more-text {
-  display: inline-block;
+  /* display: inline-block; */
   width: 40%;
   padding: 20px;
   text-align: left;
   vertical-align: middle;
 }
-
-/* @media only screen and (max-width: 880px) {
-        width: 100%;
-        padding: 0;
-      } */
 
 .know-more-title {
   font-size: 30px;
@@ -287,7 +286,7 @@ canvas {
 .work li {
   position: relative;
   width: 30%;
-  height: 200px;
+  height: 180px;
   transform-style: preserve-3d;
   background-size: cover;
   background-position: center;
@@ -341,4 +340,133 @@ canvas {
 
 .mac {
   background-image: url(images/thumb-mac.jpg);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  background: #333;
+}
+
+footer ul {
+  list-style: none;
+  padding: 50px 0;
+}
+
+/* @media only screen and (max-width: 500px) {
+      padding-top: 20px; */
+
+footer li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+/* @media only screen and (max-width: 500px) {
+        display: inherit;
+        text-align: center;
+        padding: 5px 0;
+      } */
+
+footer a {
+  display: inline-block;
+  color: #fff;
+}
+
+.container-link {
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.container-link a {
+  padding: 0 10px;
+}
+
+.container-link path {
+  transition: all 0.3s ease-in-out;
+}
+
+#twitter:hover .color path {
+  fill: #e0bbe4;
+}
+
+#behance:hover .color path,
+#behance:hover .color polygon {
+  fill: #957dad;
+}
+
+#linkedin:hover .color {
+  fill: #d291bc;
+}
+
+#github:hover g {
+  fill: #fec8d8;
+}
+
+#email:hover .color path,
+#email:hover .color polygon {
+  fill: #ffdfd3;
+}
+
+footer p {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  position: absolute;
+  font-size: 12px;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+  .work li {
+    height: 130px;
+  }
+}
+
+@media (max-width: 1021px) {
+  .list-work {
+    width: 49%;
+  }
+}
+
+@media (max-width: 960px) {
+  .know-more-picture {
+    padding-bottom: 30px;
+    width: 100%;
+  }
+
+  .know-more-text {
+    width: 100%;
+    padding: 0;
+  }
+
+  .work li {
+    width: 45%;
+    height: 150px;
+  }
+}
+
+@media (max-width: 520px) {
+  .know-more {
+    padding: 80px 0 20px;
+  }
+
+  .know-more-picture {
+    display: none;
+  }
+
+  .work li {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .mail-desktop {
+    display: none;
+  }
 }
