@@ -342,6 +342,14 @@ canvas {
   background-image: url(images/thumb-mac.jpg);
 }
 
+.blog {
+  background-image: url(images/thumb-blog-gridsome.jpg);
+}
+
+.aoki {
+  background-image: url(images/thumb-patisserie-aoki.jpg);
+}
+
 footer {
   display: flex;
   justify-content: center;
